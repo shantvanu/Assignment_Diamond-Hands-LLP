@@ -4,7 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 	"math/rand"
-	"stocky/internal/models"
 	"time"
 
 	"github.com/sirupsen/logrus"

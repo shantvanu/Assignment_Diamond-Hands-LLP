@@ -276,11 +276,5 @@ func (s *PortfolioService) UpdatePortfolioSnapshots() error {
 	return nil
 }
 
-// Helper function (shared with reward_service)
-func multiplyAmounts(a, b string) string {
-	var valA, valB float64
-	_, _ = fmt.Sscanf(a, "%f", &valA)
-	_, _ = fmt.Sscanf(b, "%f", &valB)
-	return fmt.Sprintf("%.4f", valA*valB)
-}
+// Note: multiplyAmounts is defined in reward_service.go (same package)
 
